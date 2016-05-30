@@ -347,8 +347,8 @@ function <SID>TExpandVars()
 	let l:fdir       = expand("%:p:h:t")
 	let l:hostn      = hostname()
 	let l:user       = exists("g:username") ? g:username :
-				     \ (exists("g:user") ? g:user : $USER)
-	let l:email      = exists("g:email") ? g:email : (l:user . "@" . l:hostn)
+				     \ (exists("g:user") ? g:user : $NAME)
+	let l:email      = (exists("g:email") ? g:email : $EMAIL )
 	let l:guard      = toupper(substitute(l:filec, "[^a-zA-Z0-9]", "_", "g"))
 	let l:class      = substitute(l:filen, "\\([a-zA-Z]\\+\\)", "\\u\\1\\e", "g")
 	let l:macroclass = toupper(l:class)
@@ -374,7 +374,7 @@ function <SID>TExpandVars()
 	call <SID>TExpand("CLASS", l:class)
 	call <SID>TExpand("MACROCLASS", l:macroclass)
 	call <SID>TExpand("CAMELCLASS", l:camelclass)
-	call <SID>TExpand("LICENSE", exists("g:license") ? g:license : "MIT")
+	call <SID>TExpand("LICENSE", exists("g:license") ? g:license : "GPLv2")
 
 	" Perform expansions for user-defined variables
 	for [l:varname, l:funcname] in g:templates_user_variables
