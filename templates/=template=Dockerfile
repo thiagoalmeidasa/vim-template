@@ -1,0 +1,14 @@
+FROM
+MAINTAINER Thiago Almeida <thiagoalmeidasa@gmail.com>
+
+RUN
+
+ADD
+
+VOLUME
+
+EXPOSE
+
+ENTRYPOINT
+
+CMD
