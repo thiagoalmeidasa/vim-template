@@ -2,6 +2,7 @@
  Simple Vim templates plugin
 =============================
 :Author: Adrian Perez <aperez@igalia.com>
+:Contributor: Thiago Almeida <thiagoalmeidasa@gmail.com>
 
 This is a simple plugin for Vim that will allow you to have a set of
 templates for certain file types. It is useful to add boilerplate code
@@ -19,7 +20,7 @@ For example, using Pathogen__:
 
 2. ``cd ~/.vim/bundle``
 
-3. ``git clone git://github.com/aperezdc/vim-template.git``
+3. ``git clone git://github.com/thiagoalmeidasa/vim-template.git``
 
 __ https://github.com/tpope/vim-pathogen
 
@@ -28,6 +29,11 @@ bundle managers are expected to work as well.
 
 __ https://github.com/gmarik/vundle
 
+
+Env vars
+--------
+
+Put ``export EMAIL=user@email.com`` and ``export NAME=your name`` in your .bashrc
 
 Updating
 ========
